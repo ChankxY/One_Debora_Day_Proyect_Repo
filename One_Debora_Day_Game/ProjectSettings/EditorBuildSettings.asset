@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Boot.unity
+    guid: 89e64d59d3120df42ae2f525705259e3
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b1d0c3ef6538b284abb17a0077336e89
+  - enabled: 1
+    path: Assets/Scenes/Campus.unity
+    guid: 24e5378048d3e8b42a56a670dac969a6
+  - enabled: 1
+    path: Assets/Scenes/Minijuego_Bolos.unity
+    guid: f8747c9db4b1e714ab986626d902657c
+  - enabled: 1
+    path: Assets/Scenes/Minijuego_Futbol.unity
+    guid: 1d6e44e6862ac694b87c5f9c97fad23b
+  - enabled: 1
+    path: Assets/Scenes/Minijuego_Ritmico.unity
+    guid: 7b1ee4a349782354dbf516d95fabe685
+  - enabled: 1
+    path: Assets/Scenes/Rewards.unity
+    guid: 6881e365b1ccd6548b63c72d18647111
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+  m_UseUCBPForAssetBundles: 0

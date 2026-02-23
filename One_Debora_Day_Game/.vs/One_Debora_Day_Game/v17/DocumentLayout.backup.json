@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\One_debora_day_unity_project\\ODD-Game\\One_Debora_Day_Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C23C1B1-2765-FD42-C19D-29151CBD7AFE}|Assembly-CSharp.csproj|d:\\one_debora_day_unity_project\\odd-game\\one_debora_day_game\\assets\\scenes\\nobre_boton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C23C1B1-2765-FD42-C19D-29151CBD7AFE}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\nobre_boton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C23C1B1-2765-FD42-C19D-29151CBD7AFE}|Assembly-CSharp.csproj|d:\\one_debora_day_unity_project\\odd-game\\one_debora_day_game\\assets\\scripts\\managers\\gameflowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C23C1B1-2765-FD42-C19D-29151CBD7AFE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gameflowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nobre_boton.cs",
+              "DocumentMoniker": "D:\\One_debora_day_unity_project\\ODD-Game\\One_Debora_Day_Game\\Assets\\Scenes\\nobre_boton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\nobre_boton.cs",
+              "ToolTip": "D:\\One_debora_day_unity_project\\ODD-Game\\One_Debora_Day_Game\\Assets\\Scenes\\nobre_boton.cs",
+              "RelativeToolTip": "Assets\\Scenes\\nobre_boton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:53:55.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameFlowManager.cs",
+              "DocumentMoniker": "D:\\One_debora_day_unity_project\\ODD-Game\\One_Debora_Day_Game\\Assets\\Scripts\\Managers\\GameFlowManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameFlowManager.cs",
+              "ToolTip": "D:\\One_debora_day_unity_project\\ODD-Game\\One_Debora_Day_Game\\Assets\\Scripts\\Managers\\GameFlowManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameFlowManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:17:33.025Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
