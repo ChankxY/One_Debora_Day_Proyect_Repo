@@ -27,5 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Rewards.unity
     guid: 6881e365b1ccd6548b63c72d18647111
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: be0dba743a916c74892aed636cc2fcec, type: 3}
   m_UseUCBPForAssetBundles: 0

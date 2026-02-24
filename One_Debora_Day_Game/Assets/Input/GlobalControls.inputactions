@@ -90,7 +90,7 @@
             "id": "1953a404-ba99-411b-97bd-c354a54739a0",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Accept",
                     "type": "Button",
                     "id": "3074f0d1-ff66-4c28-bbbf-f7962bedc1d5",
                     "expectedControlType": "",
@@ -107,7 +107,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Accept",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -118,7 +118,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Accept",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -129,7 +129,7 @@
             "id": "97b0e30b-b0b4-4be4-8320-d751a90d26d6",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Cancel",
                     "type": "Button",
                     "id": "0a4cf4f1-45cd-4bbc-9047-a40c960a1ee1",
                     "expectedControlType": "",
@@ -146,7 +146,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -157,7 +157,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
