@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Boot.unity
     guid: 89e64d59d3120df42ae2f525705259e3
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: b1d0c3ef6538b284abb17a0077336e89
-  - enabled: 1
     path: Assets/Scenes/Campus.unity
     guid: 24e5378048d3e8b42a56a670dac969a6
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b1d0c3ef6538b284abb17a0077336e89
   - enabled: 1
     path: Assets/Scenes/Minijuego_Bolos.unity
     guid: f8747c9db4b1e714ab986626d902657c
