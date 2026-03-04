@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639074465464047285
-    m_Hash: 795822861
+      ticks: 639082218915557762
+    m_Hash: 19007272
   m_LockFileStatus:
     m_FilePath: D:/One_debora_day_unity_project/ODD-Game/One_Debora_Day_Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639074465780058256
-    m_Hash: 609075741
+      ticks: 639082218915714065
+    m_Hash: 3528931666
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -130,9 +130,11 @@ m_ResolvedPackages:
     - 2.10.2
     - 2.11.2
     - 2.11.3
+    - 2.11.4
     compatible:
     - 2.11.3
-    recommended: 2.11.3
+    - 2.11.4
+    recommended: 2.11.4
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -417,8 +419,10 @@ m_ResolvedPackages:
     - 1.16.0
     - 1.17.0
     - 1.18.0
+    - 1.19.0
     compatible:
     - 1.18.0
+    - 1.19.0
     recommended: 1.18.0
     deprecated: []
   dependencies:
@@ -732,9 +736,11 @@ m_ResolvedPackages:
     - 1.8.8
     - 1.8.9
     - 1.8.10
+    - 1.8.11
     compatible:
     - 1.8.10
-    recommended: 1.8.10
+    - 1.8.11
+    recommended: 1.8.11
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -986,9 +992,11 @@ m_ResolvedPackages:
     - 1.9.7
     - 1.9.8
     - 1.9.9
+    - 1.9.10
     compatible:
     - 1.9.9
-    recommended: 1.9.9
+    - 1.9.10
+    recommended: 1.9.10
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -4821,9 +4829,11 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.3.0
     - 1.3.1
+    - 1.3.2
     compatible:
     - 1.3.1
-    recommended: 1.3.1
+    - 1.3.2
+    recommended: 1.3.2
     deprecated: []
   dependencies: []
   resolvedDependencies: []
