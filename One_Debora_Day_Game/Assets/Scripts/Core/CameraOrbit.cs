@@ -21,15 +21,16 @@ public class CameraOrbit : MonoBehaviour
         float hor = Input.GetAxis("Mouse X");
         if (hor != 0)
         {
-            angle.x += hor * Mathf.Deg2Rad* sensitivity.x;
+            angle.x += hor * Mathf.Deg2Rad * sensitivity.x;
         }
         float ver = Input.GetAxis("Mouse Y");
-        if (ver != 0)
+        if (ver == 0)
         {
-            angle.y += ver * Mathf.Deg2Rad * sensitivity.y;
-            angle.y = Mathf.Clamp(angle.y, -80 * Mathf.Deg2Rad, 80 * Mathf.Deg2Rad);
+            return;
         }
-}
+        angle.y += ver * Mathf.Deg2Rad * sensitivity.y;
+        angle.y = Mathf.Clamp(angle.y, -80 * Mathf.Deg2Rad, 80 * Mathf.Deg2Rad);
+    }
 
     void LateUpdate()
     {
