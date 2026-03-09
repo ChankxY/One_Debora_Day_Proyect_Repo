@@ -16,13 +16,21 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
+    public bool movementEnabled = true;
+
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+       controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+    
+{
+    if (!movementEnabled) return;   // ← Bloquea movimiento
+    // tu lógica normal…
+}
+
         // Verificar si el personaje est� en el suelo
         isGrounded = controller.isGrounded;
         if (isGrounded && velocity.y < 0)
@@ -59,4 +67,11 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+void FixedUpdate()
+{
+    if (!movementEnabled) return;   // ← Bloqueo doble (recomendado)
+    // tu movimiento con Move() o Rigidbody…
+}
+
 }

@@ -6,18 +6,23 @@ using TMPro;
 
 public class GoalTrigger : MonoBehaviour
 {
-    public string team; // "Local" o "Visit"
-    public TextMeshProUGUI scoreText;
+    [Tooltip("Si la pelota entra aquí, ¿suma gol al local? (true) o al visitante? (false)")]
+    public bool goalForLocal = false;
 
-    private static int local = 0, visit = 0;
+    [Tooltip("Tag que debe tener la pelota")]
+    public string ballTag = "Ball";
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Ball")) return;
+        if (!other.CompareTag(ballTag)) return;
 
-        if (team == "Local") local++;
-        else visit++;
+        if (MatchManager.Instance == null)
+        {
+            Debug.LogError("[GoalTrigger] No hay MatchManager en la escena.");
+            return;
+        }
 
-        if (scoreText)scoreText.text = $"{local} - {visit}";
+        if (goalForLocal) MatchManager.Instance.AddGoalLocal();
+        else MatchManager.Instance.AddGoalVisit();
     }
 }
