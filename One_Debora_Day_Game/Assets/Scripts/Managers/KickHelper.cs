@@ -41,6 +41,17 @@ public static class KickHelper
 
         Vector3 dir = actor.forward + Vector3.up * upward;
         ball.AddForce(dir.normalized * force, ForceMode.VelocityChange);
+        
+// Al final de TryKickToward / TryKickForward (si el kick se ejecuta)
+var bs = ball.GetComponent<BallState>();
+if (bs != null)
+{
+    // Decide equipo según quién patea (ej.: componente TeamAffiliation en el actor)
+    var aff = actor.GetComponent<TeamAffiliation>();
+    if (aff != null) bs.SetLastTouch(aff.team);
+}
+
         return true;
+        
     }
 }

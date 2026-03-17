@@ -260,6 +260,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4935240531098310, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
   m_PrefabInstance: {fileID: 424463923}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &107196675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107196668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c7cc8ac81acca4380d31dfd497bc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallState
 --- !u!1 &144366411
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,6 +753,19 @@ MonoBehaviour:
   accel: 12
   stopDistance: 0.5
   turnSpeedDeg: 540
+--- !u!114 &415081320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415081307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 1
 --- !u!1001 &424463923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -812,6 +837,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 107196673}
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 107196675}
   m_SourcePrefab: {fileID: 100100000, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
 --- !u!1 &448865612
 GameObject:
@@ -992,7 +1020,7 @@ PrefabInstance:
       addedObject: {fileID: 2036853405}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fc45c545af9b8db40946bef8d93b6923, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2036853404}
+      addedObject: {fileID: 2036853407}
   m_SourcePrefab: {fileID: 100100000, guid: fc45c545af9b8db40946bef8d93b6923, type: 3}
 --- !u!1 &459111236
 GameObject:
@@ -1330,6 +1358,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93e657fa784047f49bba1e343aeb5770, type: 3}
       insertIndex: -1
       addedObject: {fileID: 863416262}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93e657fa784047f49bba1e343aeb5770, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 863416263}
   m_SourcePrefab: {fileID: 100100000, guid: 93e657fa784047f49bba1e343aeb5770, type: 3}
 --- !u!1 &572579650 stripped
 GameObject:
@@ -1436,6 +1467,19 @@ MonoBehaviour:
   accel: 12
   stopDistance: 0.5
   turnSpeedDeg: 540
+--- !u!114 &572579664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572579650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 0
 --- !u!1 &645503698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5139666920524405419, guid: 68449bdc2fe089140a9fa41a51921e02, type: 3}
@@ -2003,6 +2047,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6055ba1534bd52343a93c54fc88c88a7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 415081318}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6055ba1534bd52343a93c54fc88c88a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 415081320}
   m_SourcePrefab: {fileID: 100100000, guid: 6055ba1534bd52343a93c54fc88c88a7, type: 3}
 --- !u!1 &863416250 stripped
 GameObject:
@@ -2138,6 +2185,19 @@ MonoBehaviour:
   shootDistance: 1
   faceAngleMax: 75
   dribbleStep: 1
+--- !u!114 &863416263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863416250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 1
 --- !u!1 &940858597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,6 +2498,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9221342930631031818, guid: 0b161aeecf94b6740952dca9ce8860b7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 572579662}
+    - targetCorrespondingSourceObject: {fileID: 9221342930631031818, guid: 0b161aeecf94b6740952dca9ce8860b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 572579664}
   m_SourcePrefab: {fileID: 100100000, guid: 0b161aeecf94b6740952dca9ce8860b7, type: 3}
 --- !u!1 &1111052224
 GameObject:
@@ -2738,6 +2801,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5139666920524405419, guid: 68449bdc2fe089140a9fa41a51921e02, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1352575775}
+    - targetCorrespondingSourceObject: {fileID: 5139666920524405419, guid: 68449bdc2fe089140a9fa41a51921e02, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1352575776}
   m_SourcePrefab: {fileID: 100100000, guid: 68449bdc2fe089140a9fa41a51921e02, type: 3}
 --- !u!4 &1352575773 stripped
 Transform:
@@ -2757,6 +2823,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerResettable
   spawnPoint: {fileID: 233700412}
+--- !u!114 &1352575776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645503698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 1
 --- !u!1 &1431780565
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,6 +3494,19 @@ MonoBehaviour:
   accel: 12
   stopDistance: 0.5
   turnSpeedDeg: 540
+--- !u!114 &1673285610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673285598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 0
 --- !u!1 &1698538705
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,6 +4416,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5624658543474617509, guid: 9f391bd9d71fbca48a54f6e4c427491b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673285608}
+    - targetCorrespondingSourceObject: {fileID: 5624658543474617509, guid: 9f391bd9d71fbca48a54f6e4c427491b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1673285610}
   m_SourcePrefab: {fileID: 100100000, guid: 9f391bd9d71fbca48a54f6e4c427491b, type: 3}
 --- !u!1 &2036853394 stripped
 GameObject:
@@ -4418,22 +4513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerResettable
   spawnPoint: {fileID: 1080708798}
---- !u!114 &2036853404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036853394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e7eaf24ac66094188a4e3020740e7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AIAgentMotor
-  speed: 3.5
-  accel: 12
-  stopDistance: 0.5
-  turnSpeedDeg: 540
 --- !u!114 &2036853405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4472,6 +4551,19 @@ MonoBehaviour:
   accel: 12
   stopDistance: 0.5
   turnSpeedDeg: 540
+--- !u!114 &2036853407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036853394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad680d8e4cdde074e948f7e4dba89a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeamAffiliation
+  team: 0
 --- !u!1 &2079333181
 GameObject:
   m_ObjectHideFlags: 0
