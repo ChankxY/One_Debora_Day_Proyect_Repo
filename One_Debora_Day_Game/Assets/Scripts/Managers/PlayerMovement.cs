@@ -1,77 +1,73 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-[RequireComponent(typeof(CharacterController))]
+
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movimiento")]
+    [Header("Movement")]
     public float speed = 5f;
-    public float sprintSpeed = 8f;
     public float rotationSpeed = 720f;
 
-    [Header("Salto y gravedad")]
-    public float jumpHeight = 2f;
-    public float gravity = -9.81f;
+    [Header("Jump & Gravity")]
+    public float jumpForce = 5f;
+    public float gravity = -20f;
+    public float terminalVelocity = -30f;
 
     private CharacterController controller;
-    private Vector3 velocity;
-    private bool isGrounded;
+    private float verticalVelocity;
 
-    public bool movementEnabled = true;
-
-    void Start()
+    void Awake()
     {
-       controller = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-    
-{
-    if (!movementEnabled) return;   // ← Bloquea movimiento
-    // tu lógica normal…
-}
+        HandleMovement();
+        HandleGravityAndJump();
+    }
 
-        // Verificar si el personaje est� en el suelo
-        isGrounded = controller.isGrounded;
-        if (isGrounded && velocity.y < 0)
-            velocity.y = -2f;
+    private void HandleMovement()
+    {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
 
-        // Movimiento en plano XZ
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        Vector3 move = new Vector3(h, 0f, v);
 
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-
-        if (direction.magnitude >= 0.1f)
+        if (move.sqrMagnitude > 0.01f)
         {
-            // Rotaci�n hacia la direcci�n del movimiento
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-            float angle = Mathf.LerpAngle(transform.eulerAngles.y, targetAngle, rotationSpeed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-            // Movimiento hacia adelante
-            bool isSprinting = Input.GetKey(KeyCode.LeftShift);
-            float currentSpeed = isSprinting ? sprintSpeed : speed;
-
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDir * currentSpeed * Time.deltaTime);
+            Quaternion targetRotation = Quaternion.LookRotation(move);
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime
+            );
         }
 
-        // Salto
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
+        Vector3 velocity = move.normalized * speed;
+        velocity.y = verticalVelocity;
 
-        // Aplicar gravedad
-        velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
 
-void FixedUpdate()
-{
-    if (!movementEnabled) return;   // ← Bloqueo doble (recomendado)
-    // tu movimiento con Move() o Rigidbody…
-}
+    private void HandleGravityAndJump()
+    {
+        if (controller.isGrounded)
+        {
+            // ✅ Fuerza mínima hacia abajo para "pegarlo" al suelo
+            if (verticalVelocity < 0f)
+                verticalVelocity = -2f;
 
+            if (Input.GetKeyDown(KeyCode.Space))
+                verticalVelocity = jumpForce;
+        }
+        else
+        {
+            verticalVelocity += gravity * Time.deltaTime;
+
+            // ✅ Límite de caída (evita infinito)
+            if (verticalVelocity < terminalVelocity)
+                verticalVelocity = terminalVelocity;
+        }
+    }
 }
