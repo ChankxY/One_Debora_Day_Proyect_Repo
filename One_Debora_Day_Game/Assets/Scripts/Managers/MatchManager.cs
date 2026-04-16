@@ -468,8 +468,7 @@ public class MatchManager : MonoBehaviour
     {
         if (ball == null) return;
 
-        ball.linearVelocity = Vector3.zero;   // Unity 6 [1](https://internoredpedu-my.sharepoint.com/personal/yonnathan_chacon798_educacionbogota_edu_co/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/MatchManager.cs)
-        ball.angularVelocity = Vector3.zero;
+        ball.linearVelocity = Vector3.zero;   
 
         ball.transform.position = position;
         ball.transform.rotation = Quaternion.identity;
@@ -480,8 +479,7 @@ public class MatchManager : MonoBehaviour
     {
         if (ball == null || spawnCenter == null) return;
 
-        ball.linearVelocity = Vector3.zero;   // Unity 6 [1](https://internoredpedu-my.sharepoint.com/personal/yonnathan_chacon798_educacionbogota_edu_co/Documents/Archivos%20de%20Microsoft%C2%A0Copilot%20Chat/MatchManager.cs)
-        ball.angularVelocity = Vector3.zero;
+        ball.linearVelocity = Vector3.zero;   
         ball.isKinematic = true;
 
         ball.transform.position = spawnCenter.position;
